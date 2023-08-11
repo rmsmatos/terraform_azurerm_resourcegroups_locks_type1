@@ -61,7 +61,6 @@ Complete regions mapping is also available in [REGIONS.md](REGIONS.md) documenta
 | <a name="output_lock_name"></a> [lock_name](#output_lock_name) | Returns Resource Group Lock Name. |
 | <a name="output_lock_notes"></a> [lock_notes](#output_lock_notes) | Returns Resource Group Lock Note. |
 | <a name="output_lock_scope"></a> [lock_scope](#output_lock_scope) | Returns Resource Group Lock scope |
-| <a name="output_managed_by"></a> [managed_by](#output_managed_by) | Returns the ID of the resource or application that manages this Resource Group. |
 | <a name="output_name"></a> [name](#output_name) | Returns Resource Group Name. |
 | <a name="output_tags"></a> [tags](#output_tags) | Returns Resource Group Tags. |
 
