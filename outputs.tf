@@ -24,18 +24,18 @@ output "lock_id" {
   description = "Returns Resource Group Lock ID."
 }
 output "lock_name" {
-  value       = resource.azurerm_management_lock.lock_name
+  value       = resource.azurerm_management_lock.lock.lock_name
   description = "Returns Resource Group Lock Name."
 }
 output "lock_scope" {
-  value       = resource.azurerm_management_lock.lock_scope
+  value       = resource.azurerm_management_lock.lock.lock_scope
   description = "Returns Resource Group Lock scope"
 }
 output "lock_level" {
-  value       = resource.azurerm_management_lock.lock_level
+  value       = resource.azurerm_management_lock.lock.lock_level
   description = "Returns Resource Group Lock Level"
 }
 output "lock_notes" {
-  value       = resource.azurerm_management_lock.lock_notes
+  value       = resource.azurerm_management_lock.lock.notes
   description = "Returns Resource Group Lock Note."
 }
