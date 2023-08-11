@@ -2,7 +2,7 @@ variable "name" {
   type        = string
   description = "(Required) The Azure Region where the Resource Group should exist. Changing this forces a new Resource Group to be created"
   validation {
-    condition     = can(regex("^[a-zA-Z][a-zA-Z\\-\\_\\.\\(\\)0-9]{1,90}$", var.namee))
+    condition     = can(regex("^[a-zA-Z][a-zA-Z\\-\\_\\.\\(\\)0-9]{1,90}$", var.name))
     error_message = "Name must start with letter, only contain letters, numbers, dashes, or underscores and must be between 1 and 90 characters."
   }
 }
@@ -34,7 +34,7 @@ variable "lock_level" {
   type        = string
   description = "(Required) Specifies the Level to be used for this RG Lock. Possible values are Empty (no lock), CanNotDelete and ReadOnly."
   validation {
-    ondition      = contains(["CanNotDelete", "ReadOnly"], var.lock_level)
+    condition     = contains(["CanNotDelete", "ReadOnly"], var.lock_level)
     error_message = "Invalid input, options: \"CanNotDelete\", \"ReadOnly\"."
   }
   default = "CanNotDelete"
